@@ -71,26 +71,28 @@
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
-.download-btn {
+.store-badge {
   display: inline-block;
   text-decoration: none;
   transition: all 0.3s ease;
+  border-radius: 12px;
 }
 
-.download-btn:hover {
+.store-badge:hover {
   transform: translateY(-3px);
   filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.2));
 }
 
-.store-badge {
-  height: 40px;
-  width: 120px;
-  object-fit: contain;
+.store-badge img {
+  height: auto;
+  transition: all 0.3s ease;
+  width: 225px;
 }
 
 /* Features Section */
@@ -169,9 +171,8 @@
     gap: 0.8rem;
   }
   
-  .store-badge {
-    height: 35px;
-    width: 110px;
+  .store-badge img {
+    width: 195px;
   }
   
   .section-title {
@@ -207,8 +208,7 @@
     gap: 0.6rem;
   }
   
-  .store-badge {
-    height: 32px;
-    width: 100px;
+  .store-badge img {
+    width: 180px;
   }
 }

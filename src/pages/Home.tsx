@@ -17,11 +17,13 @@ const Home: React.FC = () => {
               With <span className="brand-name">Hearth Routes</span>, save your memories, and share them with your loved ones. ❤️
             </p>
             <div className="hero-buttons">
-              <a href="#" className="download-btn ios">
-                <img src="/app-store-badge.svg" alt="Download on the App Store" className="store-badge" />
+              <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener noreferrer" className="store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+                     alt="Download on the App Store" width="150"/>
               </a>
-              <a href="#" className="download-btn android">
-                <img src="/google-play-badge.svg" alt="Get it on Google Play" className="store-badge" />
+              <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" rel="noopener noreferrer" className="store-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                     alt="Get it on Google Play" width="150"/>
               </a>
             </div>
           </div>

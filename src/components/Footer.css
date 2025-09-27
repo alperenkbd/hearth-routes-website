@@ -46,26 +46,28 @@
   font-weight: 700;
 }
 
-.download-buttons {
+.footer-app-badges {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-.download-btn {
+.footer-store-badge {
   display: inline-block;
   text-decoration: none;
   transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
-.download-btn:hover {
+.footer-store-badge:hover {
   transform: translateY(-3px);
   filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
 }
 
-.footer .store-badge {
-  height: 50px;
-  width: auto;
+.footer-store-badge img {
+  height: auto;
+  width: 112px;
+  transition: all 0.3s ease;
 }
 
 .footer-bottom {
@@ -83,10 +85,14 @@
     text-align: center;
   }
   
-  .download-buttons {
+  .footer-app-badges {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+  
+  .footer-store-badge img {
+    width: 98px;
   }
   
   .footer .container {

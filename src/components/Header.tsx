@@ -13,6 +13,9 @@ const Header: React.FC = () => {
         </Link>
         
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
+          <Link to="/invoices" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+            Invoices
+          </Link>
           <Link to="/privacy" className="nav-link" onClick={() => setIsMenuOpen(false)}>
             Privacy
           </Link>
