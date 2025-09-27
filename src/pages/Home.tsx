@@ -14,7 +14,7 @@ const Home: React.FC = () => {
               Every memory is a legacy.
             </h1>
             <p className="hero-subtitle">
-              With <span className="brand-name">Hearth Routes</span>, save your memories, and share them with your loved ones. ❤️
+              With <span className="brand-name">Hearth Routes</span>, save your memories,<br /> and share them with your loved ones. ❤️
             </p>
             <div className="hero-buttons">
               <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener noreferrer" className="store-badge">
