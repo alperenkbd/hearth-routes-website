@@ -1,19 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import './LegalPages.css';
 
 const TermsOfService: React.FC = () => {
   return (
     <div className="legal-page">
-      <Helmet>
-        <title>Terms of Service - Hearth Routes | User Agreement & Terms</title>
-        <meta name="description" content="Read Hearth Routes terms of service to understand the rules and guidelines for using our travel memory platform." />
-        <meta name="keywords" content="terms of service, user agreement, terms, Hearth Routes, legal" />
-        <meta property="og:title" content="Terms of Service - Hearth Routes | User Agreement & Terms" />
-        <meta property="og:description" content="Read Hearth Routes terms of service to understand the rules and guidelines for using our travel memory platform." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://hearthroutes.com/terms" />
-      </Helmet>
       <div className="container">
         <h1>Terms of Service</h1>
         <div className="legal-content">
