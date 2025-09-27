@@ -1,9 +1,19 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './LegalPages.css';
 
 const PrivacyPolicy: React.FC = () => {
   return (
     <div className="legal-page">
+      <Helmet>
+        <title>Privacy Policy - Hearth Routes | Data Protection & Privacy</title>
+        <meta name="description" content="Read Hearth Routes privacy policy to understand how we collect, use, and protect your personal data and travel memories." />
+        <meta name="keywords" content="privacy policy, data protection, GDPR, Hearth Routes, personal data" />
+        <meta property="og:title" content="Privacy Policy - Hearth Routes | Data Protection & Privacy" />
+        <meta property="og:description" content="Read Hearth Routes privacy policy to understand how we collect, use, and protect your personal data and travel memories." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hearthroutes.com/privacy" />
+      </Helmet>
       <div className="container">
         <h1>Privacy Policy</h1>
         <div className="legal-content">

@@ -1,9 +1,19 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Invoices.css';
 
 const Invoices: React.FC = () => {
   return (
     <div className="invoices">
+      <Helmet>
+        <title>Invoices - Hearth Routes | Purchase History & Donation Records</title>
+        <meta name="description" content="View your Hearth Routes purchase history and donation records. We donate 15% of income to orphaned children when you upgrade to premium." />
+        <meta name="keywords" content="invoices, purchase history, donations, premium, Hearth Routes, charity" />
+        <meta property="og:title" content="Invoices - Hearth Routes | Purchase History & Donation Records" />
+        <meta property="og:description" content="View your Hearth Routes purchase history and donation records. We donate 15% of income to orphaned children when you upgrade to premium." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hearthroutes.com/invoices" />
+      </Helmet>
       <div className="container">
         <div className="invoices-header">
           <h1 className="page-title">Invoices</h1>

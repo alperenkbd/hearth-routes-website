@@ -1,9 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Home.css';
 
 const Home: React.FC = () => {
   return (
     <div className="home">
+      <Helmet>
+        <title>Hearth Routes - Every Route is a Memory, Every Memory is a Legacy</title>
+        <meta name="description" content="With Hearth Routes, save your memories, and share them with your loved ones. Create lasting travel legacies that inspire future generations." />
+        <meta name="keywords" content="travel, memories, legacy, family, journey, routes, Hearth Routes" />
+        <meta property="og:title" content="Hearth Routes - Every Route is a Memory, Every Memory is a Legacy" />
+        <meta property="og:description" content="With Hearth Routes, save your memories, and share them with your loved ones. Create lasting travel legacies that inspire future generations." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hearthroutes.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hearth Routes - Every Route is a Memory, Every Memory is a Legacy" />
+        <meta name="twitter:description" content="With Hearth Routes, save your memories, and share them with your loved ones. Create lasting travel legacies that inspire future generations." />
+      </Helmet>
       {/* Hero Section with Background Image */}
       <section className="hero">
         <div className="hero-background-image"></div>

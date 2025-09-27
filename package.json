@@ -13,7 +13,9 @@
     "@types/react-router-dom": "^5.3.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.3"
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.9.3",
+    "vite-plugin-sitemap": "^0.8.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

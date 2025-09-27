@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Support.css';
 
 const Support: React.FC = () => {
@@ -53,6 +54,15 @@ const Support: React.FC = () => {
 
   return (
     <div className="support-page">
+      <Helmet>
+        <title>Support - Hearth Routes | Help Center & Contact</title>
+        <meta name="description" content="Get help with Hearth Routes. Find answers to common questions, contact support, and learn how to make the most of your travel memories." />
+        <meta name="keywords" content="support, help, contact, FAQ, Hearth Routes, assistance" />
+        <meta property="og:title" content="Support - Hearth Routes | Help Center & Contact" />
+        <meta property="og:description" content="Get help with Hearth Routes. Find answers to common questions, contact support, and learn how to make the most of your travel memories." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hearthroutes.com/support" />
+      </Helmet>
       <div className="container">
         <header className="support-header">
           <h1>How Can We Help You?</h1>
