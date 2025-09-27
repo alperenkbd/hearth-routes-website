@@ -2,6 +2,7 @@
 .home {
   width: 100%;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 /* Hero Section with Background Image */
@@ -26,6 +27,13 @@
   background-repeat: no-repeat;
   z-index: 1;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero-background-image {
+    background-size: cover;
+    background-position: center top;
+  }
 }
 
 .hero-overlay {
@@ -67,6 +75,18 @@
 .brand-name {
   color: #8B0000;
   font-weight: 700;
+}
+
+.mobile-layout {
+  display: none;
+}
+
+.desktop-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 .hero-buttons {
@@ -148,67 +168,275 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .desktop-buttons {
+    display: none;
+  }
+  
   .hero {
-    height: calc(100vh - 70px);
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 0;
+    background: white;
+    position: relative;
+  }
+  
+  .hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/hq-hr-landingpage.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 1;
+  }
+  
+  .hero-overlay {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
   }
   
   .hero-content {
-    max-width: 90%;
-    padding: 0;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    background: white;
+    order: 1;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
   }
   
   .hero-title {
-    font-size: 2.2rem;
-    line-height: 1.1;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #1a202c;
+    text-shadow: none;
   }
   
   .hero-subtitle {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #2d3748;
+    text-shadow: none;
+  }
+  
+  .mobile-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    order: 2;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+    flex: 1;
   }
   
   .hero-buttons {
+    display: flex;
+    flex-direction: column;
     gap: 0.8rem;
+    margin: 0;
+    position: absolute;
+    left: 2rem;
+    top: 20rem;
+    z-index: 10;
+  }
+  
+  .mobile-visual {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  
+  .store-badge {
+    width: 130px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
   }
   
   .store-badge img {
-    width: 195px;
+    width: 130px;
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .features {
+    padding: 2rem 0;
+    background: white;
+  }
+  
+  .container {
+    padding: 0 1rem;
   }
   
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
+  .desktop-buttons {
+    display: none;
+  }
+  
   .hero {
-    height: calc(100vh - 60px);
+    height: auto;
+    min-height: 100vh;
+    padding: 1.5rem 0;
+    background: white;
+    position: relative;
+  }
+  
+  .hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/hq-hr-landingpage.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 1;
+  }
+  
+  .hero-overlay {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
   }
   
   .hero-content {
-    max-width: 95%;
-    padding: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    background: white;
+    order: 1;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
   }
   
   .hero-title {
-    font-size: 1.8rem;
-    line-height: 1.1;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+    font-weight: 800;
+    color: #1a202c;
+    text-shadow: none;
   }
   
   .hero-subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 1.2rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    padding: 0 0.5rem;
+    color: #2d3748;
+    text-shadow: none;
+  }
+  
+  .mobile-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    order: 2;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+    flex: 1;
   }
   
   .hero-buttons {
+    display: flex;
+    flex-direction: column;
     gap: 0.6rem;
+    margin: 0;
+    position: absolute;
+    left: 1rem;
+    top: 16rem;
+    z-index: 10;
+  }
+  
+  .mobile-visual {
+    width: 100%;
+    height: 450px;
+    position: relative;
+  }
+  
+  .store-badge {
+    width: 120px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
   }
   
   .store-badge img {
-    width: 180px;
+    width: 120px;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    padding: 0 0.5rem;
+    line-height: 1.3;
+  }
+  
+  .features {
+    padding: 1.5rem 0;
+    background: white;
+  }
+  
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.2rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 }
