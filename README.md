@@ -38,7 +38,7 @@ A beautiful, responsive website for the **Hearth Routes** travel planning mobile
 - **CSS3** with custom gradients and animations
 - **ESLint** for code quality
 
-## 🛠️ Development
+## 🛠️ Development 
 
 ### Prerequisites
 - Node.js (v18 or higher)
