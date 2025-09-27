@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     sitemap({
       hostname: 'https://hearthroutes.com',
-      routes: [
+      dynamicRoutes: [
         '/',
         '/invoices',
         '/privacy',
