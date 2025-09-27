@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
               Every route is a memory. Every memory is a legacy. ❤️
             </p>
             <p className="footer-tagline">
-              Create lasting travel legacies!
+              Create lasting travel legacies that inspire future generations.
             </p>
           </div>
           <div className="footer-section">
