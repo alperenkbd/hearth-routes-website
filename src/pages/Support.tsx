@@ -166,14 +166,14 @@ const Support: React.FC = () => {
           <h2>Don't Have the App Yet?</h2>
           <p>Download <span className="brand-name">Hearth Routes</span> and start creating your travel legacy today!</p>
           <div className="download-buttons">
-            <a href="#" className="download-btn ios">
-              <span>Download on the</span>
-              <strong>App Store</strong>
-            </a>
-            <a href="#" className="download-btn android">
-              <span>Get it on</span>
-              <strong>Google Play</strong>
-            </a>
+          <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener noreferrer" className="footer-store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+                     alt="Download on the App Store" />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" rel="noopener noreferrer" className="footer-store-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                     alt="Get it on Google Play" />
+              </a>
           </div>
         </section>
       </div>
